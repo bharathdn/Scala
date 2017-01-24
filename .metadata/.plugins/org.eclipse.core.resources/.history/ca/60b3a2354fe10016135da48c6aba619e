@@ -1,0 +1,7 @@
+
+def sqrt(x: Double) = ...
+
+
+object sqrt extends App{
+  
+}
