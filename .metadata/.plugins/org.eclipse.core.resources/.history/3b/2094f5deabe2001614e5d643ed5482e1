@@ -1,0 +1,10 @@
+package week02
+
+object exercise {
+	def recursiveFactorial(n: Int): Int =
+		if(n == 0) 1 else n * recursiveFactorial(n - 1)
+		
+  def factorial(n: Int): Int = {
+  	
+  }
+}
