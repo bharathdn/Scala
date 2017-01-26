@@ -19,11 +19,13 @@ object session {
     sqrtIter(1.0)
   }                                               //> sqrt: (x: Double)Double
 
-// Tests for sqrt function
+  // Tests for sqrt function
   sqrt(2)                                         //> res1: Double = 1.4142135623746899
   sqrt(4)                                         //> res2: Double = 2.0000000929222947
   sqrt(9)                                         //> res3: Double = 3.000000001396984
   sqrt(15)                                        //> res4: Double = 3.872983698008724
   sqrt(1e-6)                                      //> res5: Double = 0.0010000001533016628
   sqrt(1e60)                                      //> res6: Double = 1.0000000031080746E30
+
+  
 }
