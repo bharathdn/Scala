@@ -25,8 +25,9 @@ class Rational(x: Int, y: Int) {
 	
   private def gcd(a: Int, b: Int): Int = { if (b == 0) a else gcd(b, a % b) }
   
-  def numer = x
-  def denom = y
+
+  def numer = x / g
+  def denom = y / g
 
   def less(that: Rational) =
     numer * that.denom < that.numer * denom
@@ -44,7 +45,7 @@ class Rational(x: Int, y: Int) {
   def neg() = new Rational(-numer, denom)
 
   override def toString = {
-   val g = gcd(x, y)
+  private val g = gcd(x, y)
    numer / g + "/" + denom / g
    }
 

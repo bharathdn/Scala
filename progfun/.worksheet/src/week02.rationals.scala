@@ -11,17 +11,22 @@ object rationals {;import org.scalaide.worksheet.runtime.library.WorksheetSuppor
   x.sub(y).sub(z);System.out.println("""res2: week02.Rational = """ + $show(res$2));$skip(11); val res$3 = 
   y.add(y);System.out.println("""res3: week02.Rational = """ + $show(res$3));$skip(12); val res$4 = 
   x.less(y);System.out.println("""res4: Boolean = """ + $show(res$4));$skip(11); val res$5 = 
-  x.max(y);System.out.println("""res5: week02.Rational = """ + $show(res$5))}
+  x.max(y);System.out.println("""res5: week02.Rational = """ + $show(res$5));$skip(18); val res$6 = 
+  new Rational(3);System.out.println("""res6: week02.Rational = """ + $show(res$6))}
 }
 
 class Rational(x: Int, y: Int) {
 	// require is used to check for pre-conditions
 	require(y != 0, "Denominator cannot be zero")
+	
+	// when "this" is used as function identifier, it means its a constructor(ctor)
+	// here, this additional ctor calls the default ctor
+	def this(x: Int) = this(x, 1)
+	
   private def gcd(a: Int, b: Int): Int = { if (b == 0) a else gcd(b, a % b) }
-  private val g = gcd(x, y)
-
-  def numer = x / g
-  def denom = y / g
+  
+  def numer = x
+  def denom = y
 
   def less(that: Rational) =
     numer * that.denom < that.numer * denom
@@ -38,6 +43,9 @@ class Rational(x: Int, y: Int) {
 
   def neg() = new Rational(-numer, denom)
 
-  override def toString = numer + "/" + denom
+  override def toString = {
+   val g = gcd(x, y)
+   numer / g + "/" + denom / g
+   }
 
 }
