@@ -8,13 +8,15 @@ object rationals {;import org.scalaide.worksheet.runtime.library.WorksheetSuppor
   val y = new Rational(5, 7);System.out.println("""y  : week02.Rational = """ + $show(y ));$skip(29); 
   val z = new Rational(3, 2);System.out.println("""z  : week02.Rational = """ + $show(z ));$skip(19); val res$2 = 
 	
-	x.sub(y).sub(z);System.out.println("""res2: week02.Rational = """ + $show(res$2))}
-  
+	x.sub(y).sub(z);System.out.println("""res2: week02.Rational = """ + $show(res$2));$skip(11); val res$3 = 
+  y.add(y);System.out.println("""res3: week02.Rational = """ + $show(res$3))}
 }
 
 class Rational(x: Int, y: Int) {
-  def numer = x
-  def denom = y
+	private def gcd(a: Int, b: Int): Int = { if(b == 0) a else gcd(b, a % b) }
+	private val g = gcd(x, y)
+  def numer = x / g
+  def denom = y / g
 
   def add(that: Rational) =
     new Rational(

@@ -9,12 +9,14 @@ object rationals {
   val z = new Rational(3, 2)                      //> z  : week02.Rational = 3/2
 	
 	x.sub(y).sub(z)                           //> res2: week02.Rational = -79/42
-  
+  y.add(y)                                        //> res3: week02.Rational = 10/7
 }
 
 class Rational(x: Int, y: Int) {
-  def numer = x
-  def denom = y
+	private def gcd(a: Int, b: Int): Int = { if(b == 0) a else gcd(b, a % b) }
+	private val g = gcd(x, y)
+  def numer = x / g
+  def denom = y / g
 
   def add(that: Rational) =
     new Rational(

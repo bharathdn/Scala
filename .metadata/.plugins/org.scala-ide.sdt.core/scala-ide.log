@@ -24736,3 +24736,67 @@ Standard error:
 2017-01-26 22:42:54,144  WARN [Worker-328] - ScalaProject - Project progfun runs on platform default installation.
 2017-01-26 22:42:55,165  WARN [Worker-322] - ScalaProject - Project progfun has platform default sourceLevel.
 2017-01-26 22:42:55,165  WARN [Worker-322] - ScalaProject - Project progfun runs on platform default installation.
+2017-01-26 22:56:27,185 ERROR [Text Viewer Hover Presenter] - System.err - Exception in thread "Text Viewer Hover Presenter"
+2017-01-26 22:56:27,193 ERROR [Text Viewer Hover Presenter] - System.err - org.eclipse.core.internal.resources.ResourceException: Resource '/progfun/src/week02/Class.sc' does not exist.
+2017-01-26 22:56:27,194 ERROR [Text Viewer Hover Presenter] - System.err - at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+2017-01-26 22:56:27,194 ERROR [Text Viewer Hover Presenter] - System.err - at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+2017-01-26 22:56:27,194 ERROR [Text Viewer Hover Presenter] - System.err - at org.eclipse.core.internal.resources.File.getContents(File.java:275)
+2017-01-26 22:56:27,194 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.resources.EclipseFile.input(EclipseFile.scala:104)
+2017-01-26 22:56:27,194 ERROR [Text Viewer Hover Presenter] - System.err - at scala.reflect.io.AbstractFile.toByteArray(AbstractFile.scala:167)
+2017-01-26 22:56:27,194 ERROR [Text Viewer Hover Presenter] - System.err - at scala.reflect.io.AbstractFile.toCharArray(AbstractFile.scala:161)
+2017-01-26 22:56:27,194 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.worksheet.ScriptCompilationUnit$$anonfun$getContents$2.apply(ScriptCompilationUnit.scala:53)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.worksheet.ScriptCompilationUnit$$anonfun$getContents$2.apply(ScriptCompilationUnit.scala:53)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at scala.Option.getOrElse(Option.scala:121)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.worksheet.ScriptCompilationUnit.getContents(ScriptCompilationUnit.scala:53)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.worksheet.ScriptCompilationUnit.lastSourceMap(ScriptCompilationUnit.scala:37)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.compiler.InteractiveCompilationUnit$$anonfun$withSourceFile$1.apply(InteractiveCompilationUnit.scala:201)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.compiler.InteractiveCompilationUnit$$anonfun$withSourceFile$1.apply(InteractiveCompilationUnit.scala:201)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.internal.compiler.PresentationCompilerProxy$$anonfun$internal$1.apply(PresentationCompilerProxy.scala:101)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.internal.compiler.PresentationCompilerProxy$$anonfun$internal$1.apply(PresentationCompilerProxy.scala:100)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at scala.Option.flatMap(Option.scala:171)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.compiler.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:201)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.worksheet.ScriptCompilationUnit.withSourceFile(ScriptCompilationUnit.scala:26)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.internal.compiler.Scaladoc$$anonfun$1.apply(ScalaDoc.scala:48)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.internal.compiler.Scaladoc$$anonfun$1.apply(ScalaDoc.scala:48)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at scala.Option.map(Option.scala:146)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.internal.compiler.Scaladoc$class.parsedDocComment(ScalaDoc.scala:48)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.internal.compiler.ScalaPresentationCompiler.parsedDocComment(ScalaPresentationCompiler.scala:53)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl$$anonfun$1$$anonfun$apply$3$$anonfun$9.apply(ScalaHoverImpl.scala:227)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl$$anonfun$1$$anonfun$apply$3$$anonfun$9.apply(ScalaHoverImpl.scala:226)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at scala.Option$WithFilter.flatMap(Option.scala:208)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl$$anonfun$1$$anonfun$apply$3.docComment$lzycompute$1(ScalaHoverImpl.scala:226)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl$$anonfun$1$$anonfun$apply$3.docComment$1(ScalaHoverImpl.scala:205)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl$$anonfun$1$$anonfun$apply$3.apply(ScalaHoverImpl.scala:238)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl$$anonfun$1$$anonfun$apply$3.apply(ScalaHoverImpl.scala:103)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.compiler.InteractiveCompilationUnit$$anonfun$withSourceFile$1.apply(InteractiveCompilationUnit.scala:201)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.compiler.InteractiveCompilationUnit$$anonfun$withSourceFile$1.apply(InteractiveCompilationUnit.scala:201)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.internal.compiler.PresentationCompilerProxy$$anonfun$internal$1.apply(PresentationCompilerProxy.scala:101)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.internal.compiler.PresentationCompilerProxy$$anonfun$internal$1.apply(PresentationCompilerProxy.scala:100)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at scala.Option.flatMap(Option.scala:171)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.core.compiler.InteractiveCompilationUnit$class.withSourceFile(InteractiveCompilationUnit.scala:201)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.worksheet.ScriptCompilationUnit.withSourceFile(ScriptCompilationUnit.scala:26)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl$$anonfun$1.apply(ScalaHoverImpl.scala:103)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl$$anonfun$1.apply(ScalaHoverImpl.scala:101)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at scala.Option.map(Option.scala:146)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.scalaide.ui.internal.editor.hover.ScalaHoverImpl.getHoverInfo2(ScalaHoverImpl.scala:101)
+2017-01-26 22:56:27,195 ERROR [Text Viewer Hover Presenter] - System.err - at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:165)
+2017-01-26 22:56:51,498  WARN [Worker-327] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-01-26 22:56:51,498  WARN [Worker-327] - ScalaProject - Project progfun runs on platform default installation.
+2017-01-26 22:56:52,540  WARN [Worker-329] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-01-26 22:56:52,540  WARN [Worker-329] - ScalaProject - Project progfun runs on platform default installation.
+2017-01-26 22:57:33,776  WARN [Worker-331] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-01-26 22:57:33,776  WARN [Worker-331] - ScalaProject - Project progfun runs on platform default installation.
+2017-01-26 22:57:34,792  WARN [Worker-327] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-01-26 22:57:34,792  WARN [Worker-327] - ScalaProject - Project progfun runs on platform default installation.
+2017-01-26 22:57:46,649  WARN [Worker-327] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-01-26 22:57:46,649  WARN [Worker-327] - ScalaProject - Project progfun runs on platform default installation.
+2017-01-26 22:57:47,664  WARN [Worker-332] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-01-26 22:57:47,664  WARN [Worker-332] - ScalaProject - Project progfun runs on platform default installation.
+2017-01-26 22:57:49,488  WARN [Worker-331] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-01-26 22:57:49,489  WARN [Worker-331] - ScalaProject - Project progfun runs on platform default installation.
+2017-01-26 22:57:50,586  WARN [Worker-329] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-01-26 22:57:50,594  WARN [Worker-329] - ScalaProject - Project progfun runs on platform default installation.
