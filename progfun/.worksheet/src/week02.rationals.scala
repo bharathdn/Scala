@@ -7,16 +7,27 @@ object rationals {;import org.scalaide.worksheet.runtime.library.WorksheetSuppor
 
   val y = new Rational(5, 7);System.out.println("""y  : week02.Rational = """ + $show(y ));$skip(29); 
   val z = new Rational(3, 2);System.out.println("""z  : week02.Rational = """ + $show(z ));$skip(19); val res$2 = 
-	
-	x.sub(y).sub(z);System.out.println("""res2: week02.Rational = """ + $show(res$2));$skip(11); val res$3 = 
-  y.add(y);System.out.println("""res3: week02.Rational = """ + $show(res$3))}
+
+  x.sub(y).sub(z);System.out.println("""res2: week02.Rational = """ + $show(res$2));$skip(11); val res$3 = 
+  y.add(y);System.out.println("""res3: week02.Rational = """ + $show(res$3));$skip(12); val res$4 = 
+  x.less(y);System.out.println("""res4: Boolean = """ + $show(res$4));$skip(11); val res$5 = 
+  x.max(y);System.out.println("""res5: week02.Rational = """ + $show(res$5))}
 }
 
 class Rational(x: Int, y: Int) {
-	private def gcd(a: Int, b: Int): Int = { if(b == 0) a else gcd(b, a % b) }
-	private val g = gcd(x, y)
+	// require is used to check for pre-conditions
+	require(y != 0, "Denominator cannot be zero")
+  private def gcd(a: Int, b: Int): Int = { if (b == 0) a else gcd(b, a % b) }
+  private val g = gcd(x, y)
+
   def numer = x / g
   def denom = y / g
+
+  def less(that: Rational) =
+    numer * that.denom < that.numer * denom
+
+  def max(that: Rational) =
+    if (this.less(that)) that else this
 
   def add(that: Rational) =
     new Rational(
@@ -25,7 +36,7 @@ class Rational(x: Int, y: Int) {
 
   def sub(that: Rational) = add(that.neg)
 
-  def neg() = new Rational(-numer,  denom)
+  def neg() = new Rational(-numer, denom)
 
   override def toString = numer + "/" + denom
 
