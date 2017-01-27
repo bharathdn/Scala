@@ -1,0 +1,13 @@
+package week02
+import math.abs
+object exercise4 {
+
+  val tolerence = 0.0001                          //> tolerence  : Double = 1.0E-4
+
+  def isCloseEnough(x: Double, y: Double) =
+    abs((x - y) / x) / x < tolerence              //> isCloseEnough: (x: Double, y: Double)Boolean
+  
+  def fixedPoint(f: Double => Double) (firstGuess: Double) = {
+  }                                               //> fixedPoint: (f: Double => Double)(firstGuess: Double)Unit
+
+}
