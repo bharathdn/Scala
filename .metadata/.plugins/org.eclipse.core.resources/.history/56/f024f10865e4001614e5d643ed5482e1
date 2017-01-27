@@ -8,9 +8,9 @@ object rationals {
   val y = new Rational(5, 7)                      //> y  : week02.Rational = 5/7
   val z = new Rational(3, 2)                      //> z  : week02.Rational = 3/2
 
-  x - y - z                                       //> res2: week02.Rational = -79/42
-  y + y                                           //> res3: week02.Rational = 10/7
-  x - y                                           //> res4: week02.Rational = 8/-21
+  x.sub(y).sub(z)                                 //> res2: week02.Rational = -79/42
+  y.add(y)                                        //> res3: week02.Rational = 10/7
+  x.less(y)                                       //> res4: Boolean = true
   x.max(y)                                        //> res5: week02.Rational = 5/7
   new Rational(3)                                 //> res6: week02.Rational = 3/1
 }
@@ -32,19 +32,20 @@ class Rational(x: Int, y: Int) {
     numer * that.denom < that.numer * denom
 
   def max(that: Rational) =
-    if (this < that) that else this
+    if (this.less(that)) that else this
 
-  def + (that: Rational) =
+  def add(that: Rational) =
     new Rational(
       numer * that.denom + that.numer * denom,
       denom * that.denom)
 
-  def - (that: Rational) = this + -that
+  def sub(that: Rational) = add(that.neg)
 
-  def unary_- () = new Rational(-numer, denom)
+  def neg() = new Rational(-numer, denom)
 
   override def toString = {
    val g = gcd(x, y)
    numer / g + "/" + denom / g
    }
+
 }
