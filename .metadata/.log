@@ -81,3 +81,36 @@ Java Model Exception: Java Model Status [funsets does not exist]
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:165)
 !SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-02-02 13:45:47.450
 !MESSAGE funsets does not exist
+
+!ENTRY org.scala-ide.sdt.core 4 0 2017-02-02 15:35:27.246
+!MESSAGE Exception while reconciling worksheet
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/progfun/src/week03.sc' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:275)
+	at org.scalaide.core.resources.EclipseFile.input(EclipseFile.scala:104)
+	at scala.reflect.io.AbstractFile.toByteArray(AbstractFile.scala:167)
+	at scala.reflect.io.AbstractFile.toCharArray(AbstractFile.scala:161)
+	at org.scalaide.worksheet.ScriptCompilationUnit$$anonfun$getContents$2.apply(ScriptCompilationUnit.scala:53)
+	at org.scalaide.worksheet.ScriptCompilationUnit$$anonfun$getContents$2.apply(ScriptCompilationUnit.scala:53)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.scalaide.worksheet.ScriptCompilationUnit.getContents(ScriptCompilationUnit.scala:53)
+	at org.scalaide.worksheet.ScriptCompilationUnit.lastSourceMap(ScriptCompilationUnit.scala:37)
+	at org.scalaide.core.internal.compiler.ScalaPresentationCompiler$$anonfun$askReload$2$$anonfun$apply$5.apply(ScalaPresentationCompiler.scala:281)
+	at org.scalaide.core.internal.compiler.ScalaPresentationCompiler$$anonfun$askReload$2$$anonfun$apply$5.apply(ScalaPresentationCompiler.scala:281)
+	at scala.collection.immutable.List.map(List.scala:273)
+	at org.scalaide.core.internal.compiler.ScalaPresentationCompiler$$anonfun$askReload$2.apply(ScalaPresentationCompiler.scala:281)
+	at org.scalaide.core.internal.compiler.ScalaPresentationCompiler$$anonfun$askReload$2.apply(ScalaPresentationCompiler.scala:281)
+	at org.scalaide.core.compiler.IScalaPresentationCompiler$.withResponse(IScalaPresentationCompiler.scala:307)
+	at org.scalaide.core.internal.compiler.ScalaPresentationCompiler.askReload(ScalaPresentationCompiler.scala:281)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:95)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
+	at org.scalaide.core.compiler.InteractiveCompilationUnit$class.forceReconcile(InteractiveCompilationUnit.scala:150)
+	at org.scalaide.worksheet.ScriptCompilationUnit.forceReconcile(ScriptCompilationUnit.scala:26)
+	at org.scalaide.worksheet.reconciler.ScalaReconcilingStrategy.reconcile(ScalaReconcilingStrategy.scala:29)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2017-02-02 15:35:27.247
+!MESSAGE Resource '/progfun/src/week03.sc' does not exist.

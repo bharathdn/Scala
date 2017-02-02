@@ -37196,3 +37196,89 @@ Standard error:
 2017-02-02 15:32:05,741  WARN [Worker-36] - ScalaProject - Project progfun runs on platform default installation.
 2017-02-02 15:32:06,772  WARN [Worker-40] - ScalaProject - Project progfun has platform default sourceLevel.
 2017-02-02 15:32:06,772  WARN [Worker-40] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:35:22,580  WARN [Worker-42] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:35:22,580  WARN [Worker-42] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:35:26,578  WARN [Worker-43] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:35:26,578  WARN [Worker-43] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:35:27,133  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:35:27,134  WARN [org.eclipse.jface.text.reconciler.MonoReconciler] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:35:27,248 ERROR [main] - org.scala-ide.sdt.core - org.scala-ide.sdt.core - org.scala-ide.sdt.core - 0 - Exception while reconciling worksheet
+org.eclipse.core.internal.resources.ResourceException: Resource '/progfun/src/week03.sc' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:275)
+	at org.scalaide.core.resources.EclipseFile.input(EclipseFile.scala:104)
+	at scala.reflect.io.AbstractFile.toByteArray(AbstractFile.scala:167)
+	at scala.reflect.io.AbstractFile.toCharArray(AbstractFile.scala:161)
+	at org.scalaide.worksheet.ScriptCompilationUnit$$anonfun$getContents$2.apply(ScriptCompilationUnit.scala:53)
+	at org.scalaide.worksheet.ScriptCompilationUnit$$anonfun$getContents$2.apply(ScriptCompilationUnit.scala:53)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.scalaide.worksheet.ScriptCompilationUnit.getContents(ScriptCompilationUnit.scala:53)
+	at org.scalaide.worksheet.ScriptCompilationUnit.lastSourceMap(ScriptCompilationUnit.scala:37)
+	at org.scalaide.core.internal.compiler.ScalaPresentationCompiler$$anonfun$askReload$2$$anonfun$apply$5.apply(ScalaPresentationCompiler.scala:281)
+	at org.scalaide.core.internal.compiler.ScalaPresentationCompiler$$anonfun$askReload$2$$anonfun$apply$5.apply(ScalaPresentationCompiler.scala:281)
+	at scala.collection.immutable.List.map(List.scala:273)
+	at org.scalaide.core.internal.compiler.ScalaPresentationCompiler$$anonfun$askReload$2.apply(ScalaPresentationCompiler.scala:281)
+	at org.scalaide.core.internal.compiler.ScalaPresentationCompiler$$anonfun$askReload$2.apply(ScalaPresentationCompiler.scala:281)
+	at org.scalaide.core.compiler.IScalaPresentationCompiler$.withResponse(IScalaPresentationCompiler.scala:307)
+	at org.scalaide.core.internal.compiler.ScalaPresentationCompiler.askReload(ScalaPresentationCompiler.scala:281)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.obtainPc$1(PresentationCompilerProxy.scala:95)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.internal(PresentationCompilerProxy.scala:100)
+	at org.scalaide.core.internal.compiler.PresentationCompilerProxy.apply(PresentationCompilerProxy.scala:58)
+	at org.scalaide.core.compiler.InteractiveCompilationUnit$class.forceReconcile(InteractiveCompilationUnit.scala:150)
+	at org.scalaide.worksheet.ScriptCompilationUnit.forceReconcile(ScriptCompilationUnit.scala:26)
+	at org.scalaide.worksheet.reconciler.ScalaReconcilingStrategy.reconcile(ScalaReconcilingStrategy.scala:29)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+2017-02-02 15:35:38,862  WARN [Worker-44] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:35:38,862  WARN [Worker-44] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:35:58,099  WARN [main] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:35:58,099  WARN [main] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:35:58,189  WARN [Worker-42] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:35:58,189  WARN [Worker-42] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:36:06,859  WARN [Worker-44] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:36:06,859  WARN [Worker-44] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:36:07,198  WARN [Java indexing] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:36:07,199  WARN [Java indexing] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:36:13,190  WARN [Worker-42] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:36:13,190  WARN [Worker-42] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:38:35,480  WARN [Worker-39] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:38:35,481  WARN [Worker-39] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:38:44,806  WARN [Worker-48] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:38:44,806  WARN [Worker-48] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:40:14,056  WARN [Worker-43] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:40:14,061  WARN [Worker-43] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:40:15,128  WARN [Worker-43] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:40:15,128  WARN [Worker-43] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:40:20,414  WARN [Worker-43] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:40:20,415  WARN [Worker-43] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:40:21,454  WARN [Worker-50] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:40:21,455  WARN [Worker-50] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:40:22,597  WARN [Worker-51] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:40:22,597  WARN [Worker-51] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:40:23,647  WARN [Worker-43] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:40:23,647  WARN [Worker-43] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:40:43,230  WARN [Worker-51] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:40:43,230  WARN [Worker-51] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:40:44,277  WARN [Worker-39] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:40:44,277  WARN [Worker-39] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:40:51,646  WARN [Worker-51] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:40:51,646  WARN [Worker-51] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:40:52,679  WARN [Worker-43] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:40:52,679  WARN [Worker-43] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:40:53,716  WARN [Worker-50] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:40:53,716  WARN [Worker-50] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:40:54,746  WARN [Worker-49] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:40:54,746  WARN [Worker-49] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:41:59,256  WARN [Worker-43] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:41:59,256  WARN [Worker-43] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:42:00,300  WARN [Worker-43] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:42:00,300  WARN [Worker-43] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:42:08,862  WARN [Worker-52] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:42:08,862  WARN [Worker-52] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:42:09,906  WARN [Worker-54] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:42:09,906  WARN [Worker-54] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:42:24,456  WARN [Worker-55] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:42:24,456  WARN [Worker-55] - ScalaProject - Project progfun runs on platform default installation.
+2017-02-02 15:42:25,493  WARN [Worker-53] - ScalaProject - Project progfun has platform default sourceLevel.
+2017-02-02 15:42:25,493  WARN [Worker-53] - ScalaProject - Project progfun runs on platform default installation.

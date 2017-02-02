@@ -1,7 +1,7 @@
-object intsets {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; def main(args: Array[String])=$execute{;$skip(36); 
-  println("Hello");$skip(51); ;
-  def tree = new NonEmpty(3, new Empty, new Empty);System.out.println("""tree: => NonEmpty""");$skip(15); val res$0 = 
-  tree.incl(4);System.out.println("""res0: IntSet = """ + $show(res$0))}
+object intsets {
+  println("Hello");
+  def tree = new NonEmpty(3, new Empty, new Empty)
+  tree.incl(4)
 }
 
 abstract class IntSet {
