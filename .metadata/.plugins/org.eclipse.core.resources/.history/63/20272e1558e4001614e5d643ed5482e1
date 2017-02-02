@@ -1,7 +1,0 @@
-package week02
-
-object rationals {
-  new Rational(1,2)                               //> res0: week02.Rational = week02.Rational@1376c05c
-}
-
-class Rational(x: Int, y: Int)

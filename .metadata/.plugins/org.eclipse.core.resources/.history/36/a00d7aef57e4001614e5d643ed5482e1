@@ -1,7 +1,0 @@
-package week02
-
-object rationals {
-  
-}
-
-calss Rational(x: Int, y: Int)

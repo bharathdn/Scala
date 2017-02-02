@@ -1,0 +1,25 @@
+object intsets {
+	println("Hello");
+	
+}
+
+abstract  class IntSet {
+	def incl(x: Int): IntSet
+	def contains(x: Int): Boolean
+}
+
+/*
+	Take for example, binary tree
+	there are 2 types of possbile trees,
+		i) a tree for empty set
+		ii) a tree consisting integer and 2 sub-trees
+*/
+class Empty extends IntSet {
+	def contains(x: Int): Boolean = false
+	def incl(x: Int): IntSet = new NonEmpty(x, new Empty, new Empty);
+}
+
+class NonEmpty (elem: Int, left: IntSet, right: IntSet) extends IntSet {
+	def contains(x: Int): Boolean =
+	if()
+}
