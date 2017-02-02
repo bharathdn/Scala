@@ -1,7 +1,7 @@
-object intsets {;import org.scalaide.worksheet.runtime.library.WorksheetSupport._; def main(args: Array[String])=$execute{;$skip(36); 
-  println("Hello");$skip(51); ;
-  def tree = new NonEmpty(3, new Empty, new Empty);System.out.println("""tree: => NonEmpty""");$skip(15); val res$0 = 
-  tree.incl(4);System.out.println("""res0: IntSet = """ + $show(res$0))}
+object intsets {
+  println("Hello");                               //> Hello
+  def tree = new NonEmpty(3, new Empty, new Empty)//> tree: => NonEmpty
+  tree.incl(4)                                    //> res0: IntSet = {.3{.4.}}
 }
 
 abstract class IntSet {
@@ -17,18 +17,11 @@ abstract class IntSet {
 		
 		Singleton:
 		The object keyword makes the singleton, as in this case,
-		there was no need to create more than one instance.
-		
-		Accessing the singleton object does not invovle using 'new keyword'
+		there was no need to create more than one instanc
 		
 		To make it regular class, replace 'object' by class
 */
 
-object Empty extends IntSet {
-  def contains(x: Int): Boolean = false
-  def incl(x: Int): IntSet = new NonEmpty(x, Empty, Empty);
-  override def toString = ".";
-}
 
 class NonEmpty(elem: Int, left: IntSet, right: IntSet) extends IntSet {
 

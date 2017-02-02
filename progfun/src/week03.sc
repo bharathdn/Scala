@@ -1,7 +1,7 @@
 object intsets {
-  println("Hello");                               //> Hello
-  def tree = new NonEmpty(3, new Empty, new Empty)//> tree: => NonEmpty
-  tree.incl(4)                                    //> res0: IntSet = {.3{.4.}}
+  println("Hello");
+  def tree = new NonEmpty(3, new Empty, new Empty)
+  tree.incl(4)
 }
 
 abstract class IntSet {
@@ -14,10 +14,19 @@ abstract class IntSet {
 	there are 2 types of possbile trees,
 		i) a tree for empty set
 		ii) a tree consisting integer and 2 sub-trees
+		
+		Singleton:
+		The object keyword makes the singleton, as in this case,
+		there was no need to create more than one instance.
+		
+		Accessing the singleton object does not invovle using 'new keyword'
+		
+		To make it regular class, replace 'object' by class
 */
-class Empty extends IntSet {
+
+object Empty extends IntSet {
   def contains(x: Int): Boolean = false
-  def incl(x: Int): IntSet = new NonEmpty(x, new Empty, new Empty);
+  def incl(x: Int): IntSet = new NonEmpty(x, Empty, Empty);
   override def toString = ".";
 }
 
