@@ -1,0 +1,11 @@
+package list
+
+object nth {
+  def nth[T](index: Int, xs: List[T]): T =
+    if (index == 0) xs.head
+    else nth(index - 1, xs.tail)                  //> nth: [T](index: Int, xs: list.List[T])T
+
+  val list = new Cons(1, new Cons(2, new Cons(3, new Nil)))
+                                                  //> list  : list.Cons[Int] = list.Cons@7a79be86
+	
+}

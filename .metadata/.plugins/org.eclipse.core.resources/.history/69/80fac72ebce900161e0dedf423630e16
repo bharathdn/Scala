@@ -1,0 +1,15 @@
+package week03
+
+/**
+ways to import in scala
+
+1) import week03.Rational
+2) import week03._
+3) import {week01, week03}
+
+*/
+import week03._
+
+object scratch {
+  new Rational(1,2)
+}

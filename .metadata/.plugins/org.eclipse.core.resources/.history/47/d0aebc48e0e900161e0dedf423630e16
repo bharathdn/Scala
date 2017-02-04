@@ -1,0 +1,5 @@
+package list
+
+object nth {
+  def nth[T](index: Int, xs: List[T]): T
+}

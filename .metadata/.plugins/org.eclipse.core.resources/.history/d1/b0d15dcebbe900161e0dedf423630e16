@@ -1,0 +1,5 @@
+package week03
+
+object scratch {
+  new rational(1,2)
+}

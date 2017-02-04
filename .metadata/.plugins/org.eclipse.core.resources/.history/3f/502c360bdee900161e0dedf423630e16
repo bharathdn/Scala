@@ -1,0 +1,21 @@
+package list
+
+trait List[T] {
+  def isEmpty: Boolean
+  def head: T
+  def tail: List[T]
+}
+
+class Cons[T](val _head: T, val _tail: List[T]) extends List[T] {
+  def isEmpty = false
+  
+  def head:
+  
+  
+}
+
+class Nil extends {
+  def isEmpty: Boolean = true
+  def head: Nothing = throw new NoSuchElementException("Nil.head")
+  def tail: Nothing = throw new NoSuchElementException("Nil.tail")
+}

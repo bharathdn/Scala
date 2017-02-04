@@ -1,0 +1,7 @@
+package list
+
+object nth {
+  def nth[T](index: Int, xs: List[T]): T =
+  	if(n == 0) xs.head
+  	else 
+}

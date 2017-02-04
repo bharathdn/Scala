@@ -1,0 +1,6 @@
+package list
+
+trait List[T] {
+  def isEmpty: Boolean
+  def 
+}
